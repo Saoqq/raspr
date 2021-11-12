@@ -1,0 +1,15 @@
+{
+    "files.associations": {
+        "rpcdce.h": "c",
+        "hello.h": "c",
+        "rpc.h": "c",
+        "winerror.h": "c",
+        "rpcnterr.h": "c",
+        "excpt.h": "c",
+        "stdio.h": "c",
+        "stdlib.h": "c",
+        "windows.h": "c",
+        "sdkddkver.h": "c",
+        "rpcnsi.h": "c"
+    }
+}
