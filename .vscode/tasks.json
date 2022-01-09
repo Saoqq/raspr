@@ -23,7 +23,8 @@
 		  "/EHsc",
 		  "/Fe:",
 		  "${fileDirname}\\${fileBasenameNoExtension}.exe",
-		  "${file}"
+		  "${file}",
+		  "Rpcrt4.lib"
 		],
 		"problemMatcher": ["$msCompile"],
 		"group": {

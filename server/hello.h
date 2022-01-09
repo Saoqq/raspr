@@ -4,7 +4,7 @@
 
 
  /* File created by MIDL compiler version 7.00.0555 */
-/* at Fri Sep 24 11:44:39 2021
+/* at Sun Jan 09 13:04:41 2022
  */
 /* Compiler settings for .\hello.idl:
     Oicf, W1, Zp8, env=Win32 (32b run), target_arch=X86 7.00.0555 
@@ -54,6 +54,8 @@ extern "C"{
 
 void HelloProc( 
     /* [string][in] */ unsigned char *pszString);
+
+void Shutdown( void);
 
 
 extern handle_t hello_IfHandle;

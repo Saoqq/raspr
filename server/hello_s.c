@@ -4,7 +4,7 @@
 
 
  /* File created by MIDL compiler version 7.00.0555 */
-/* at Fri Sep 24 11:44:39 2021
+/* at Sun Jan 09 13:04:41 2022
  */
 /* Compiler settings for .\hello.idl:
     Oicf, W1, Zp8, env=Win32 (32b run), target_arch=X86 7.00.0555 
@@ -35,7 +35,7 @@
 #include "hello.h"
 
 #define TYPE_FORMAT_STRING_SIZE   7                                 
-#define PROC_FORMAT_STRING_SIZE   31                                
+#define PROC_FORMAT_STRING_SIZE   55                                
 #define EXPR_FORMAT_STRING_SIZE   1                                 
 #define TRANSMIT_AS_TABLE_SIZE    0            
 #define WIRE_MARSHAL_TABLE_SIZE   0            
@@ -131,6 +131,23 @@ static const hello_MIDL_PROC_FORMAT_STRING hello__MIDL_ProcFormatString =
 /* 26 */	NdrFcShort( 0x0 ),	/* x86 Stack size/offset = 0 */
 /* 28 */	NdrFcShort( 0x4 ),	/* Type Offset=4 */
 
+	/* Procedure Shutdown */
+
+/* 30 */	0x32,		/* FC_BIND_PRIMITIVE */
+			0x48,		/* Old Flags:  */
+/* 32 */	NdrFcLong( 0x0 ),	/* 0 */
+/* 36 */	NdrFcShort( 0x1 ),	/* 1 */
+/* 38 */	NdrFcShort( 0x0 ),	/* x86 Stack size/offset = 0 */
+/* 40 */	NdrFcShort( 0x0 ),	/* 0 */
+/* 42 */	NdrFcShort( 0x0 ),	/* 0 */
+/* 44 */	0x40,		/* Oi2 Flags:  has ext, */
+			0x0,		/* 0 */
+/* 46 */	0x8,		/* 8 */
+			0x1,		/* Ext Flags:  new corr desc, */
+/* 48 */	NdrFcShort( 0x0 ),	/* 0 */
+/* 50 */	NdrFcShort( 0x0 ),	/* 0 */
+/* 52 */	NdrFcShort( 0x0 ),	/* 0 */
+
 			0x0
         }
     };
@@ -152,7 +169,8 @@ static const hello_MIDL_TYPE_FORMAT_STRING hello__MIDL_TypeFormatString =
 
 static const unsigned short hello_FormatStringOffsetTable[] =
     {
-    0
+    0,
+    30
     };
 
 
@@ -183,17 +201,19 @@ static const MIDL_STUB_DESC hello_StubDesc =
 static const RPC_DISPATCH_FUNCTION hello_table[] =
     {
     NdrServerCall2,
+    NdrServerCall2,
     0
     };
 static const RPC_DISPATCH_TABLE hello_v1_0_DispatchTable = 
     {
-    1,
+    2,
     (RPC_DISPATCH_FUNCTION*)hello_table
     };
 
 static const SERVER_ROUTINE hello_ServerRoutineTable[] = 
     {
-    (SERVER_ROUTINE)HelloProc
+    (SERVER_ROUTINE)HelloProc,
+    (SERVER_ROUTINE)Shutdown
     };
 
 static const MIDL_SERVER_INFO hello_ServerInfo = 

@@ -14,5 +14,7 @@ interface hello
 
 void HelloProc([in, string] unsigned char * pszString);
 
+void Shutdown(void);
+
 }
 
