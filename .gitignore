@@ -1,0 +1,7 @@
+client.obj
+server.obj
+vc140.pdb
+client/client.pdb
+client/client.ilk
+server/server.ilk
+server/server.pdb
