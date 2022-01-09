@@ -1,0 +1,18 @@
+/* file: hello.idl */
+
+ 
+
+[ uuid (6B29FC40-CA47-1067-B31D-00DD010662DA),
+
+  version(1.0)
+
+]
+
+interface hello
+
+{
+
+void HelloProc([in, string] unsigned char * pszString);
+
+}
+
